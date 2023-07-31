@@ -11,6 +11,8 @@
 		7C537F502A77F46D009196C9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C537F4F2A77F46D009196C9 /* ContentView.swift */; };
 		7C537F522A77F46E009196C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C537F512A77F46E009196C9 /* Assets.xcassets */; };
 		7C537F562A77F46E009196C9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C537F552A77F46E009196C9 /* Preview Assets.xcassets */; };
+		7C537F5E2A77FBD0009196C9 /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7C537F5C2A77FBD0009196C9 /* Main.xcdatamodeld */; };
+		7C537F602A77FFBC009196C9 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C537F5F2A77FFBC009196C9 /* DataController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,9 @@
 		7C537F512A77F46E009196C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C537F532A77F46E009196C9 /* SkillMapper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SkillMapper.entitlements; sourceTree = "<group>"; };
 		7C537F552A77F46E009196C9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7C537F5D2A77FBD0009196C9 /* Main.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Main.xcdatamodel; sourceTree = "<group>"; };
+		7C537F5F2A77FFBC009196C9 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		7C537F612A78034A009196C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +57,11 @@
 		7C537F4C2A77F46D009196C9 /* SkillMapper */ = {
 			isa = PBXGroup;
 			children = (
+				7C537F612A78034A009196C9 /* Info.plist */,
 				7C537F4D2A77F46D009196C9 /* SkillMapperApp.swift */,
 				7C537F4F2A77F46D009196C9 /* ContentView.swift */,
+				7C537F5C2A77FBD0009196C9 /* Main.xcdatamodeld */,
+				7C537F5F2A77FFBC009196C9 /* DataController.swift */,
 				7C537F512A77F46E009196C9 /* Assets.xcassets */,
 				7C537F532A77F46E009196C9 /* SkillMapper.entitlements */,
 				7C537F542A77F46E009196C9 /* Preview Content */,
@@ -139,6 +147,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C537F5E2A77FBD0009196C9 /* Main.xcdatamodeld in Sources */,
+				7C537F602A77FFBC009196C9 /* DataController.swift in Sources */,
 				7C537F502A77F46D009196C9 /* ContentView.swift in Sources */,
 				7C537F4E2A77F46D009196C9 /* SkillMapperApp.swift in Sources */,
 			);
@@ -269,6 +279,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SkillMapper/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -307,6 +318,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SkillMapper/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -354,6 +366,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7C537F5C2A77FBD0009196C9 /* Main.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7C537F5D2A77FBD0009196C9 /* Main.xcdatamodel */,
+			);
+			currentVersion = 7C537F5D2A77FBD0009196C9 /* Main.xcdatamodel */;
+			path = Main.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 7C537F422A77F46D009196C9 /* Project object */;
 }
