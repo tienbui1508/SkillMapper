@@ -44,7 +44,7 @@ class DataController: ObservableObject {
                 let skill = Skill(context: viewContext)
                 skill.title = "Skill \(i)-\(j)"
                 skill.content = "Description goes here"
-                skill.startDate = .now
+                skill.creationDate = .now
                 skill.completed = Bool.random()
                 skill.difficulty = Int16.random(in: 0...2)
                 tag.addToSkills(skill)

@@ -16,6 +16,8 @@
 		7C537F632A78EEBF009196C9 /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C537F622A78EEBF009196C9 /* SidebarView.swift */; };
 		7C537F652A78EEC8009196C9 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C537F642A78EEC8009196C9 /* DetailView.swift */; };
 		7C537F672A78F174009196C9 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C537F662A78F174009196C9 /* Filter.swift */; };
+		7C69C6E92A7950BC00ED148D /* Skill-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C69C6E82A7950BC00ED148D /* Skill-CoreDataHelpers.swift */; };
+		7C69C6EB2A79536400ED148D /* Tag-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C69C6EA2A79536400ED148D /* Tag-CoreDataHelpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 		7C537F622A78EEBF009196C9 /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
 		7C537F642A78EEC8009196C9 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		7C537F662A78F174009196C9 /* Filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
+		7C69C6E82A7950BC00ED148D /* Skill-CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Skill-CoreDataHelpers.swift"; sourceTree = "<group>"; };
+		7C69C6EA2A79536400ED148D /* Tag-CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tag-CoreDataHelpers.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,8 @@
 				7C537F622A78EEBF009196C9 /* SidebarView.swift */,
 				7C537F642A78EEC8009196C9 /* DetailView.swift */,
 				7C537F662A78F174009196C9 /* Filter.swift */,
+				7C69C6E82A7950BC00ED148D /* Skill-CoreDataHelpers.swift */,
+				7C69C6EA2A79536400ED148D /* Tag-CoreDataHelpers.swift */,
 				7C537F5F2A77FFBC009196C9 /* DataController.swift */,
 				7C537F5C2A77FBD0009196C9 /* Main.xcdatamodeld */,
 				7C537F512A77F46E009196C9 /* Assets.xcassets */,
@@ -156,6 +162,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C69C6E92A7950BC00ED148D /* Skill-CoreDataHelpers.swift in Sources */,
+				7C69C6EB2A79536400ED148D /* Tag-CoreDataHelpers.swift in Sources */,
 				7C537F672A78F174009196C9 /* Filter.swift in Sources */,
 				7C537F5E2A77FBD0009196C9 /* Main.xcdatamodeld in Sources */,
 				7C537F652A78EEC8009196C9 /* DetailView.swift in Sources */,
