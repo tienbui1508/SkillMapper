@@ -18,6 +18,7 @@
 		7C537F672A78F174009196C9 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C537F662A78F174009196C9 /* Filter.swift */; };
 		7C69C6E92A7950BC00ED148D /* Skill-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C69C6E82A7950BC00ED148D /* Skill-CoreDataHelpers.swift */; };
 		7C69C6EB2A79536400ED148D /* Tag-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C69C6EA2A79536400ED148D /* Tag-CoreDataHelpers.swift */; };
+		7C69C6ED2A7A02CD00ED148D /* SkillRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C69C6EC2A7A02CD00ED148D /* SkillRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		7C537F662A78F174009196C9 /* Filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
 		7C69C6E82A7950BC00ED148D /* Skill-CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Skill-CoreDataHelpers.swift"; sourceTree = "<group>"; };
 		7C69C6EA2A79536400ED148D /* Tag-CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tag-CoreDataHelpers.swift"; sourceTree = "<group>"; };
+		7C69C6EC2A7A02CD00ED148D /* SkillRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				7C537F612A78034A009196C9 /* Info.plist */,
 				7C537F4D2A77F46D009196C9 /* SkillMapperApp.swift */,
 				7C537F4F2A77F46D009196C9 /* ContentView.swift */,
+				7C69C6EC2A7A02CD00ED148D /* SkillRow.swift */,
 				7C537F622A78EEBF009196C9 /* SidebarView.swift */,
 				7C537F642A78EEC8009196C9 /* DetailView.swift */,
 				7C537F662A78F174009196C9 /* Filter.swift */,
@@ -166,6 +169,7 @@
 				7C69C6EB2A79536400ED148D /* Tag-CoreDataHelpers.swift in Sources */,
 				7C537F672A78F174009196C9 /* Filter.swift in Sources */,
 				7C537F5E2A77FBD0009196C9 /* Main.xcdatamodeld in Sources */,
+				7C69C6ED2A7A02CD00ED148D /* SkillRow.swift in Sources */,
 				7C537F652A78EEC8009196C9 /* DetailView.swift in Sources */,
 				7C537F602A77FFBC009196C9 /* DataController.swift in Sources */,
 				7C537F632A78EEBF009196C9 /* SidebarView.swift in Sources */,

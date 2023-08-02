@@ -36,6 +36,7 @@ struct SidebarView: View {
                             .badge(filter.tag?.tagActiveSkills.count ?? 0)
                     }
                 }
+                .onDelete(perform: delete)
             }
         }
         .toolbar {
@@ -49,6 +50,12 @@ struct SidebarView: View {
        
     }
     
+    func delete(_ offsets: IndexSet) {
+        for offset in offsets {
+            let item = tags[offset]
+            dataController.delete(item)
+        }
+    }
 }
 
 struct SidebarView_Previews: PreviewProvider {
