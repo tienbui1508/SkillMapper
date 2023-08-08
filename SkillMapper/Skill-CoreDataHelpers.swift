@@ -31,6 +31,24 @@ extension Skill {
         return result.sorted()
     }
     
+    var skillStatus: String {
+        if completed {
+            return "Completed"
+        } else {
+            return "Learning"
+        }
+    }
+    
+    var skillTagsList: String {
+        guard let tags else { return "No tags" }
+
+        if tags.count == 0 {
+            return "No tags"
+        } else {
+            return skillTags.map(\.tagName).formatted()
+        }
+    }
+    
     static var example: Skill {
         let controller = DataController(inMemory: true)
         let viewContext = controller.container.viewContext

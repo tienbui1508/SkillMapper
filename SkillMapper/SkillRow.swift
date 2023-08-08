@@ -23,7 +23,7 @@ struct SkillRow: View {
                         .font(.headline)
                         .lineLimit(1)
 
-                    Text("No tags")
+                    Text(skill.skillTagsList)
                         .foregroundStyle(.secondary)
                         .lineLimit(1)
                 }

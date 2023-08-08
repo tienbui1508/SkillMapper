@@ -10,32 +10,24 @@ import SwiftUI
 struct ContentView: View {
     @EnvironmentObject var dataController: DataController
     
-    var skills: [Skill] {
-        let filter = dataController.selectedFilter ?? .all
-        var allSkills: [Skill]
-
-        if let tag = filter.tag {
-            allSkills = tag.skills?.allObjects as? [Skill] ?? []
-        } else {
-            let request = Skill.fetchRequest()
-            request.predicate = NSPredicate(format: "modificationDate > %@", filter.minModificationDate as NSDate)
-            allSkills = (try? dataController.container.viewContext.fetch(request)) ?? []
-        }
-
-        return allSkills.sorted()
-    }
+  
     
     var body: some View {
-        List {
-            ForEach(skills) { skill in
+        List(selection: $dataController.selectedSkill) {
+            ForEach(dataController.skillsForSelectedFilter()) { skill in
                 SkillRow(skill: skill)
             }
             .onDelete(perform: delete)
         }
         .navigationTitle("Skills")
+        .searchable(text: $dataController.filterText, tokens: $dataController.filterTokens, suggestedTokens: .constant(dataController.suggestedFilterTokens), prompt: "Filter skills, or type # to add tags") { tag in
+            Text(tag.tagName)
+        }
     }
     
     func delete(_ offsets: IndexSet) {
+        let skills = dataController.skillsForSelectedFilter()
+        
         for offset in offsets {
             let item = skills[offset]
             dataController.delete(item)

@@ -11,6 +11,9 @@ import SwiftUI
 struct SkillMapperApp: App {
     @StateObject var dataController = DataController()
     
+    @Environment(\.scenePhase) var scenePhase
+
+    
     var body: some Scene {
         WindowGroup {
             NavigationSplitView {
@@ -22,6 +25,12 @@ struct SkillMapperApp: App {
             }
             .environment(\.managedObjectContext, dataController.container.viewContext)
             .environmentObject(dataController)
+            // trigger  a save for any kind of phase change that isn’t the app moving back to being active
+            .onChange(of: scenePhase) { phase in
+                if phase != .active {
+                    dataController.save()
+                }
+            }
         }
     }
 }
