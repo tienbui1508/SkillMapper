@@ -7,6 +7,15 @@
 
 import CoreData
 
+enum SortType: String {
+    case dateCreated = "creationDate"
+    case dateModified = "modificationDate"
+}
+
+enum Status {
+    case all, learning, learned
+}
+
 class DataController: ObservableObject {
     let container: NSPersistentCloudKitContainer
     
@@ -15,6 +24,12 @@ class DataController: ObservableObject {
     
     @Published var filterText = ""
     @Published var filterTokens = [Tag]()
+    
+    @Published var filterEnabled = false
+    @Published var filterDifficulty = -1
+    @Published var filterStatus = Status.all
+    @Published var sortType = SortType.dateCreated
+    @Published var sortNewestFirst = true
     
     private var saveTask: Task<Void, Error>?
     
@@ -172,9 +187,23 @@ class DataController: ObservableObject {
             }
             
         }
+        
+        if filterEnabled {
+            if filterDifficulty >= 0 {
+                let difficultyFilter = NSPredicate(format: "difficulty = %d", filterDifficulty)
+                predicates.append(difficultyFilter)
+            }
+            
+            if filterStatus != .all {
+                let lookForLearned = filterStatus == .learned
+                let statusFilter = NSPredicate(format: "completed = %@", NSNumber(value: lookForLearned))
+                predicates.append(statusFilter)
+            }
+        }
 
         let request = Skill.fetchRequest()
         request.predicate = NSCompoundPredicate(andPredicateWithSubpredicates: predicates)
+        request.sortDescriptors = [NSSortDescriptor(key: sortType.rawValue, ascending: sortNewestFirst)]
         
         let allSkills = (try? container.viewContext.fetch(request)) ?? []
         
