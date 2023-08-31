@@ -78,6 +78,25 @@ struct SkillView: View {
         .onReceive(skill.objectWillChange) { _ in
             dataController.queueSave()
         }
+        .onSubmit(dataController.save)
+        .toolbar {
+            Menu {
+                Button {
+                    UIPasteboard.general.string = skill.title
+                } label: {
+                    Label("Copy Skill Title", systemImage: "doc.on.doc")
+                }
+                
+                Button {
+                    skill.completed.toggle()
+                    dataController.save()
+                } label: {
+                    Label(skill.completed ? "Re-learn Skill" : "Learned Skill", systemImage: "brain.head.profile")
+                }
+            } label: {
+                Label("Action", systemImage: "ellipsis.circle")
+            }
+        }
     }
 }
 

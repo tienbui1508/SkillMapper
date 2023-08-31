@@ -33,7 +33,7 @@ extension Skill {
     
     var skillStatus: String {
         if completed {
-            return "Completed"
+            return "Learned"
         } else {
             return "Learning"
         }
