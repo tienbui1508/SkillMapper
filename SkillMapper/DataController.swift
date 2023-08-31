@@ -209,6 +209,27 @@ class DataController: ObservableObject {
         
         return allSkills.sorted()
     }
+    
+    func newTag() {
+        let tag = Tag(context: container.viewContext)
+        tag.id = UUID()
+        tag.name = "New tag"
+        save()
+    }
+    
+    func newSkill() {
+        let skill = Skill(context: container.viewContext)
+        skill.title = "New skill"
+        skill.creationDate = .now
+        skill.difficulty = 1
+        if let tag = selectedFilter?.tag {
+            skill.addToTags(tag)
+        }
+        
+        save()
+        
+        selectedSkill = skill
+    }
 }
 
 

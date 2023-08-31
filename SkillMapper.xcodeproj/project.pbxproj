@@ -21,6 +21,11 @@
 		7C69C6ED2A7A02CD00ED148D /* SkillRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C69C6EC2A7A02CD00ED148D /* SkillRow.swift */; };
 		7C69C6EF2A7A328C00ED148D /* SkillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C69C6EE2A7A328C00ED148D /* SkillView.swift */; };
 		7C69C6F12A7A329300ED148D /* NoSkillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C69C6F02A7A329300ED148D /* NoSkillView.swift */; };
+		7CA06AA52AA0A9E200810B05 /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA06AA42AA0A9E200810B05 /* Bundle-Decodable.swift */; };
+		7CA06AB02AA0B1B500810B05 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CA06AAE2AA0B1B500810B05 /* Colors.xcassets */; };
+		7CA06AB12AA0B1B500810B05 /* Awards.json in Resources */ = {isa = PBXBuildFile; fileRef = 7CA06AAF2AA0B1B500810B05 /* Awards.json */; };
+		7CA06AB32AA0B30400810B05 /* Award.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA06AB22AA0B30400810B05 /* Award.swift */; };
+		7CA06AB52AA0B3BE00810B05 /* AwardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA06AB42AA0B3BE00810B05 /* AwardsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +46,11 @@
 		7C69C6EC2A7A02CD00ED148D /* SkillRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillRow.swift; sourceTree = "<group>"; };
 		7C69C6EE2A7A328C00ED148D /* SkillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillView.swift; sourceTree = "<group>"; };
 		7C69C6F02A7A329300ED148D /* NoSkillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoSkillView.swift; sourceTree = "<group>"; };
+		7CA06AA42AA0A9E200810B05 /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
+		7CA06AAE2AA0B1B500810B05 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		7CA06AAF2AA0B1B500810B05 /* Awards.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Awards.json; sourceTree = "<group>"; };
+		7CA06AB22AA0B30400810B05 /* Award.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Award.swift; sourceTree = "<group>"; };
+		7CA06AB42AA0B3BE00810B05 /* AwardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,14 +90,19 @@
 				7C537F622A78EEBF009196C9 /* SidebarView.swift */,
 				7C537F642A78EEC8009196C9 /* DetailView.swift */,
 				7C69C6EE2A7A328C00ED148D /* SkillView.swift */,
+				7CA06AA42AA0A9E200810B05 /* Bundle-Decodable.swift */,
 				7C69C6F02A7A329300ED148D /* NoSkillView.swift */,
 				7C537F662A78F174009196C9 /* Filter.swift */,
 				7C69C6E82A7950BC00ED148D /* Skill-CoreDataHelpers.swift */,
 				7C69C6EA2A79536400ED148D /* Tag-CoreDataHelpers.swift */,
 				7C537F5F2A77FFBC009196C9 /* DataController.swift */,
+				7CA06AB22AA0B30400810B05 /* Award.swift */,
+				7CA06AB42AA0B3BE00810B05 /* AwardsView.swift */,
 				7C537F5C2A77FBD0009196C9 /* Main.xcdatamodeld */,
 				7C537F512A77F46E009196C9 /* Assets.xcassets */,
 				7C537F532A77F46E009196C9 /* SkillMapper.entitlements */,
+				7CA06AAF2AA0B1B500810B05 /* Awards.json */,
+				7CA06AAE2AA0B1B500810B05 /* Colors.xcassets */,
 				7C537F542A77F46E009196C9 /* Preview Content */,
 			);
 			path = SkillMapper;
@@ -159,6 +174,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CA06AB02AA0B1B500810B05 /* Colors.xcassets in Resources */,
+				7CA06AB12AA0B1B500810B05 /* Awards.json in Resources */,
 				7C537F562A77F46E009196C9 /* Preview Assets.xcassets in Resources */,
 				7C537F522A77F46E009196C9 /* Assets.xcassets in Resources */,
 			);
@@ -172,9 +189,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C69C6E92A7950BC00ED148D /* Skill-CoreDataHelpers.swift in Sources */,
+				7CA06AB32AA0B30400810B05 /* Award.swift in Sources */,
+				7CA06AB52AA0B3BE00810B05 /* AwardsView.swift in Sources */,
 				7C69C6EB2A79536400ED148D /* Tag-CoreDataHelpers.swift in Sources */,
 				7C69C6EF2A7A328C00ED148D /* SkillView.swift in Sources */,
 				7C537F672A78F174009196C9 /* Filter.swift in Sources */,
+				7CA06AA52AA0A9E200810B05 /* Bundle-Decodable.swift in Sources */,
 				7C537F5E2A77FBD0009196C9 /* Main.xcdatamodeld in Sources */,
 				7C69C6ED2A7A02CD00ED148D /* SkillRow.swift in Sources */,
 				7C537F652A78EEC8009196C9 /* DetailView.swift in Sources */,
