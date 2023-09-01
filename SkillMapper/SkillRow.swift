@@ -32,7 +32,8 @@ struct SkillRow: View {
 
                 VStack(alignment: .trailing) {
                     Text(skill.skillCreationDate.formatted(date: .numeric, time: .omitted))
-                        .font(.subheadline)
+                        .accessibilityLabel(skill.skillCreationDate.formatted(date: .abbreviated, time: .omitted))
+                            .font(.subheadline)
 
                     if skill.completed {
                         Text("LEARNED")
@@ -42,6 +43,7 @@ struct SkillRow: View {
                 .foregroundStyle(.secondary)
             }
         }
+        .accessibilityHint(skill.difficulty == 2 ? "Hard skill" : "")
     }
 }
 

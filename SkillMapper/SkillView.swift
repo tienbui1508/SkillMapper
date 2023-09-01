@@ -82,7 +82,7 @@ struct SkillView: View {
         .toolbar {
             Menu {
                 Button {
-                    UIPasteboard.general.string = skill.title
+//                    UIPasteboard.general.string = skill.title
                 } label: {
                     Label("Copy Skill Title", systemImage: "doc.on.doc")
                 }
