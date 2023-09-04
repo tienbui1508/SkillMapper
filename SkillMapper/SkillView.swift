@@ -32,36 +32,7 @@ struct SkillView: View {
                     Text("Hard").tag(Int16(2))
                 }
                 
-                Menu {
-                    // show selected tags first
-                    ForEach(skill.skillTags) { tag in
-                        Button {
-                            skill.removeFromTags(tag)
-                        } label: {
-                            Label(tag.tagName, systemImage: "checkmark")
-                        }
-                    }
-
-                    // now show unselected tags
-                    let otherTags = dataController.missingTags(from: skill)
-
-                    if otherTags.isEmpty == false {
-                        Divider()
-
-                        Section("Add Tags") {
-                            ForEach(otherTags) { tag in
-                                Button(tag.tagName) {
-                                    skill.addToTags(tag)
-                                }
-                            }
-                        }
-                    }
-                } label: {
-                    Text(skill.skillTagsList)
-                        .multilineTextAlignment(.leading)
-                            .frame(maxWidth: .infinity, alignment: .leading)
-                            .animation(nil, value: skill.skillTagsList)
-                }
+                TagsMenuView(skill: skill)
             }
             
             Section {
@@ -80,22 +51,7 @@ struct SkillView: View {
         }
         .onSubmit(dataController.save)
         .toolbar {
-            Menu {
-                Button {
-//                    UIPasteboard.general.string = skill.title
-                } label: {
-                    Label("Copy Skill Title", systemImage: "doc.on.doc")
-                }
-                
-                Button {
-                    skill.completed.toggle()
-                    dataController.save()
-                } label: {
-                    Label(skill.completed ? "Re-learn Skill" : "Learned Skill", systemImage: "brain.head.profile")
-                }
-            } label: {
-                Label("Action", systemImage: "ellipsis.circle")
-            }
+            SkillViewToolbar(skill: skill)
         }
     }
 }
@@ -103,5 +59,6 @@ struct SkillView: View {
 struct SkillView_Previews: PreviewProvider {
     static var previews: some View {
         SkillView(skill: .example)
+            .environmentObject(DataController(inMemory: true))
     }
 }

@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C09AA6F2AA62F620019F312 /* SidebarViewToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C09AA6E2AA62F620019F312 /* SidebarViewToolbar.swift */; };
+		7C09AA712AA631C50019F312 /* SkillViewToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C09AA702AA631C50019F312 /* SkillViewToolbar.swift */; };
+		7C09AA732AA6335C0019F312 /* ContentViewToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C09AA722AA6335C0019F312 /* ContentViewToolbar.swift */; };
+		7C09AA752AA635B10019F312 /* TagsMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C09AA742AA635B10019F312 /* TagsMenuView.swift */; };
+		7C09AA772AA637600019F312 /* SmartFilterRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C09AA762AA637600019F312 /* SmartFilterRow.swift */; };
+		7C09AA792AA638030019F312 /* UserFilterRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C09AA782AA638030019F312 /* UserFilterRow.swift */; };
 		7C537F4E2A77F46D009196C9 /* SkillMapperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C537F4D2A77F46D009196C9 /* SkillMapperApp.swift */; };
 		7C537F502A77F46D009196C9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C537F4F2A77F46D009196C9 /* ContentView.swift */; };
 		7C537F522A77F46E009196C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C537F512A77F46E009196C9 /* Assets.xcassets */; };
@@ -31,6 +37,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7C09AA6E2AA62F620019F312 /* SidebarViewToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarViewToolbar.swift; sourceTree = "<group>"; };
+		7C09AA702AA631C50019F312 /* SkillViewToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillViewToolbar.swift; sourceTree = "<group>"; };
+		7C09AA722AA6335C0019F312 /* ContentViewToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewToolbar.swift; sourceTree = "<group>"; };
+		7C09AA742AA635B10019F312 /* TagsMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagsMenuView.swift; sourceTree = "<group>"; };
+		7C09AA762AA637600019F312 /* SmartFilterRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartFilterRow.swift; sourceTree = "<group>"; };
+		7C09AA782AA638030019F312 /* UserFilterRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFilterRow.swift; sourceTree = "<group>"; };
 		7C537F4A2A77F46D009196C9 /* SkillMapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkillMapper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C537F4D2A77F46D009196C9 /* SkillMapperApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillMapperApp.swift; sourceTree = "<group>"; };
 		7C537F4F2A77F46D009196C9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -95,10 +107,16 @@
 				7C537F662A78F174009196C9 /* Filter.swift */,
 				7C537F5F2A77FFBC009196C9 /* DataController.swift */,
 				7C537F4F2A77F46D009196C9 /* ContentView.swift */,
+				7C09AA722AA6335C0019F312 /* ContentViewToolbar.swift */,
 				7C69C6EC2A7A02CD00ED148D /* SkillRow.swift */,
 				7C537F622A78EEBF009196C9 /* SidebarView.swift */,
+				7C09AA782AA638030019F312 /* UserFilterRow.swift */,
+				7C09AA762AA637600019F312 /* SmartFilterRow.swift */,
+				7C09AA6E2AA62F620019F312 /* SidebarViewToolbar.swift */,
 				7C537F642A78EEC8009196C9 /* DetailView.swift */,
 				7C69C6EE2A7A328C00ED148D /* SkillView.swift */,
+				7C09AA742AA635B10019F312 /* TagsMenuView.swift */,
+				7C09AA702AA631C50019F312 /* SkillViewToolbar.swift */,
 				7CA06AA42AA0A9E200810B05 /* Bundle-Decodable.swift */,
 				7C69C6F02A7A329300ED148D /* NoSkillView.swift */,
 				7C69C6E82A7950BC00ED148D /* Skill-CoreDataHelpers.swift */,
@@ -201,18 +219,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C69C6E92A7950BC00ED148D /* Skill-CoreDataHelpers.swift in Sources */,
+				7C09AA752AA635B10019F312 /* TagsMenuView.swift in Sources */,
 				7CA06AB32AA0B30400810B05 /* Award.swift in Sources */,
 				7CA06AB52AA0B3BE00810B05 /* AwardsView.swift in Sources */,
 				7C69C6EB2A79536400ED148D /* Tag-CoreDataHelpers.swift in Sources */,
 				7C69C6EF2A7A328C00ED148D /* SkillView.swift in Sources */,
 				7C537F672A78F174009196C9 /* Filter.swift in Sources */,
 				7CA06AA52AA0A9E200810B05 /* Bundle-Decodable.swift in Sources */,
+				7C09AA772AA637600019F312 /* SmartFilterRow.swift in Sources */,
 				7C537F5E2A77FBD0009196C9 /* Main.xcdatamodeld in Sources */,
 				7C69C6ED2A7A02CD00ED148D /* SkillRow.swift in Sources */,
 				7C537F652A78EEC8009196C9 /* DetailView.swift in Sources */,
+				7C09AA732AA6335C0019F312 /* ContentViewToolbar.swift in Sources */,
 				7C69C6F12A7A329300ED148D /* NoSkillView.swift in Sources */,
+				7C09AA6F2AA62F620019F312 /* SidebarViewToolbar.swift in Sources */,
 				7C537F602A77FFBC009196C9 /* DataController.swift in Sources */,
 				7C537F632A78EEBF009196C9 /* SidebarView.swift in Sources */,
+				7C09AA792AA638030019F312 /* UserFilterRow.swift in Sources */,
+				7C09AA712AA631C50019F312 /* SkillViewToolbar.swift in Sources */,
 				7C537F502A77F46D009196C9 /* ContentView.swift in Sources */,
 				7C537F4E2A77F46D009196C9 /* SkillMapperApp.swift in Sources */,
 			);
