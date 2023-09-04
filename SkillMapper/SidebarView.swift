@@ -54,7 +54,7 @@ struct SidebarView: View {
                             }
                             .accessibilityElement()
                             .accessibilityLabel(filter.name)
-                            .accessibilityHint("^[\(filter.activeSkillCount) skill](inflect: true)")
+                            .accessibilityHint("\(filter.activeSkillCount) skills")
                     }
                 }
                 .onDelete(perform: delete)

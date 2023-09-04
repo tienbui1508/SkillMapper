@@ -31,7 +31,7 @@ struct SkillRow: View {
                 Spacer()
 
                 VStack(alignment: .trailing) {
-                    Text(skill.skillCreationDate.formatted(date: .numeric, time: .omitted))
+                    Text(skill.skillFormattedCreateDate)
                         .accessibilityLabel(skill.skillCreationDate.formatted(date: .abbreviated, time: .omitted))
                             .font(.subheadline)
 

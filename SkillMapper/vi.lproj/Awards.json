@@ -1,0 +1,162 @@
+[
+    {
+        "name": "First Steps",
+        "description": "Thêm kỹ năng đầu tiên.",
+        "color": "Light Blue",
+        "criterion": "skills",
+        "value": 1,
+        "image": "figure.walk"
+    },
+    {
+        "name": "A Great Start",
+        "description": "Thêm 10 kỹ năng.",
+        "color": "Light Blue",
+        "criterion": "skills",
+        "value": 10,
+        "image": "hand.thumbsup.fill"
+    },
+    {
+        "name": "Moving On Up",
+        "description": "Thêm 20 kỹ năng.",
+        "color": "Light Blue",
+        "criterion": "skills",
+        "value": 20,
+        "image": "tray.and.arrow.up.fill"
+    },
+    {
+        "name": "Gathering Speed",
+        "description": "Thêm 50 kỹ năng.",
+        "color": "Light Blue",
+        "criterion": "skills",
+        "value": 50,
+        "image": "speedometer"
+    },
+    {
+        "name": "Making Waves",
+        "description": "Thêm 100 kỹ năng.",
+        "color": "Light Blue",
+        "criterion": "skills",
+        "value": 100,
+        "image": "dot.radiowaves.left.and.right"
+    },
+    {
+        "name": "High Performer",
+        "description": "Thêm 250 kỹ năng.",
+        "color": "Light Blue",
+        "criterion": "skills",
+        "value": 250,
+        "image": "square.stack.3d.up.fill"
+    },
+    {
+        "name": "Star Performer",
+        "description": "Thêm 500 kỹ năng.",
+        "color": "Light Blue",
+        "criterion": "skills",
+        "value": 500,
+        "image": "star.circle.fill"
+    },
+    {
+        "name": "Champion Performer",
+        "description": "Thêm 1000 kỹ năng.",
+        "color": "Light Blue",
+        "criterion": "skills",
+        "value": 1000,
+        "image": "crown.fill"
+    },
+    {
+        "name": "Checking Boxes",
+        "description": "Học xong kỹ năng đầu tiên.",
+        "color": "Green",
+        "criterion": "learned",
+        "value": 1,
+        "image": "checkmark.shield.fill"
+    },
+    {
+        "name": "Rocking it",
+        "description": "Học xong 10 kỹ năng.",
+        "color": "Green",
+        "criterion": "learned",
+        "value": 10,
+        "image": "guitars.fill"
+    },
+    {
+        "name": "20 is Plenty",
+        "description": "Học xong 20 kỹ năng.",
+        "color": "Green",
+        "criterion": "learned",
+        "value": 20,
+        "image": "20.square.fill"
+    },
+    {
+        "name": "Bullseye!",
+        "description": "Học xong 50 kỹ năng.",
+        "color": "Green",
+        "criterion": "learned",
+        "value": 50,
+        "image": "target"
+    },
+    {
+        "name": "Flying High",
+        "description": "Học xong 100 kỹ năng.",
+        "color": "Green",
+        "criterion": "learned",
+        "value": 100,
+        "image": "airplane.circle.fill"
+    },
+    {
+        "name": "You're On Fire!",
+        "description": "Học xong 250 kỹ năng.",
+        "color": "Green",
+        "criterion": "learned",
+        "value": 250,
+        "image": "flame.fill"
+    },
+    {
+        "name": "Box Ticker in Chief",
+        "description": "Học xong 500 kỹ năng.",
+        "color": "Green",
+        "criterion": "learned",
+        "value": 500,
+        "image": "text.badge.checkmark"
+    },
+    {
+        "name": "Boom!",
+        "description": "Học xong 1000 kỹ năng.",
+        "color": "Green",
+        "criterion": "learned",
+        "value": 1000,
+        "image": "bolt.circle.fill"
+    },
+    {
+        "name": "Playing tag",
+        "description": "Tạo thẻ đầu tiên.",
+        "color": "Gold",
+        "criterion": "tags",
+        "value": 1,
+        "image": "tag.fill"
+    },
+    {
+        "name": "Tag wrestling",
+        "description": "Tạo 10 thẻ.",
+        "color": "Gold",
+        "criterion": "tags",
+        "value": 10,
+        "image": "tag.circle.fill"
+    },
+    {
+        "name": "Supreme tagger",
+        "description": "Tạo 50 thẻ.",
+        "color": "Gold",
+        "criterion": "tags",
+        "value": 50,
+        "image": "square.grid.3x1.folder.fill.badge.plus"
+    },
+    {
+        "name": "Supporter",
+        "description": "Bạn đã mua phiên bản mở khoá.",
+        "color": "Purple",
+        "criterion": "unlock",
+        "value": 0,
+        "image": "dollarsign.square.fill"
+    }
+]

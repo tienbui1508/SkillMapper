@@ -215,13 +215,13 @@ class DataController: ObservableObject {
     func newTag() {
         let tag = Tag(context: container.viewContext)
         tag.id = UUID()
-        tag.name = "New tag"
+        tag.name = NSLocalizedString("New tag", comment: "Create a new tag")
         save()
     }
     
     func newSkill() {
         let skill = Skill(context: container.viewContext)
-        skill.title = "New skill"
+        skill.title = NSLocalizedString("New skill", comment: "Create a new skill")
         skill.creationDate = .now
         skill.difficulty = 1
         if let tag = selectedFilter?.tag {

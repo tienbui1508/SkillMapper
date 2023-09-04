@@ -16,6 +16,9 @@
 		7C537F632A78EEBF009196C9 /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C537F622A78EEBF009196C9 /* SidebarView.swift */; };
 		7C537F652A78EEC8009196C9 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C537F642A78EEC8009196C9 /* DetailView.swift */; };
 		7C537F672A78F174009196C9 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C537F662A78F174009196C9 /* Filter.swift */; };
+		7C669BE22AA5CDE800694F0E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7C669BE42AA5CDE800694F0E /* Localizable.strings */; };
+		7C669BE62AA5CE6F00694F0E /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 7C669BE82AA5CE6F00694F0E /* Localizable.stringsdict */; };
+		7C669BEA2AA5D28500694F0E /* Awards.json in Resources */ = {isa = PBXBuildFile; fileRef = 7C669BEC2AA5D28500694F0E /* Awards.json */; };
 		7C69C6E92A7950BC00ED148D /* Skill-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C69C6E82A7950BC00ED148D /* Skill-CoreDataHelpers.swift */; };
 		7C69C6EB2A79536400ED148D /* Tag-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C69C6EA2A79536400ED148D /* Tag-CoreDataHelpers.swift */; };
 		7C69C6ED2A7A02CD00ED148D /* SkillRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C69C6EC2A7A02CD00ED148D /* SkillRow.swift */; };
@@ -23,7 +26,6 @@
 		7C69C6F12A7A329300ED148D /* NoSkillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C69C6F02A7A329300ED148D /* NoSkillView.swift */; };
 		7CA06AA52AA0A9E200810B05 /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA06AA42AA0A9E200810B05 /* Bundle-Decodable.swift */; };
 		7CA06AB02AA0B1B500810B05 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CA06AAE2AA0B1B500810B05 /* Colors.xcassets */; };
-		7CA06AB12AA0B1B500810B05 /* Awards.json in Resources */ = {isa = PBXBuildFile; fileRef = 7CA06AAF2AA0B1B500810B05 /* Awards.json */; };
 		7CA06AB32AA0B30400810B05 /* Award.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA06AB22AA0B30400810B05 /* Award.swift */; };
 		7CA06AB52AA0B3BE00810B05 /* AwardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA06AB42AA0B3BE00810B05 /* AwardsView.swift */; };
 /* End PBXBuildFile section */
@@ -41,6 +43,12 @@
 		7C537F622A78EEBF009196C9 /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
 		7C537F642A78EEC8009196C9 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		7C537F662A78F174009196C9 /* Filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
+		7C669BE32AA5CDE800694F0E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7C669BE52AA5CDFA00694F0E /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7C669BE72AA5CE6F00694F0E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = en; path = en.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		7C669BE92AA5CE7400694F0E /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = vi; path = vi.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		7C669BEB2AA5D28500694F0E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = en; path = en.lproj/Awards.json; sourceTree = "<group>"; };
+		7C669BED2AA5D28900694F0E /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = vi; path = vi.lproj/Awards.json; sourceTree = "<group>"; };
 		7C69C6E82A7950BC00ED148D /* Skill-CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Skill-CoreDataHelpers.swift"; sourceTree = "<group>"; };
 		7C69C6EA2A79536400ED148D /* Tag-CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tag-CoreDataHelpers.swift"; sourceTree = "<group>"; };
 		7C69C6EC2A7A02CD00ED148D /* SkillRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillRow.swift; sourceTree = "<group>"; };
@@ -48,7 +56,6 @@
 		7C69C6F02A7A329300ED148D /* NoSkillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoSkillView.swift; sourceTree = "<group>"; };
 		7CA06AA42AA0A9E200810B05 /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
 		7CA06AAE2AA0B1B500810B05 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
-		7CA06AAF2AA0B1B500810B05 /* Awards.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Awards.json; sourceTree = "<group>"; };
 		7CA06AB22AA0B30400810B05 /* Award.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Award.swift; sourceTree = "<group>"; };
 		7CA06AB42AA0B3BE00810B05 /* AwardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -98,10 +105,12 @@
 				7C69C6EA2A79536400ED148D /* Tag-CoreDataHelpers.swift */,
 				7CA06AB22AA0B30400810B05 /* Award.swift */,
 				7CA06AB42AA0B3BE00810B05 /* AwardsView.swift */,
+				7C669BE42AA5CDE800694F0E /* Localizable.strings */,
+				7C669BE82AA5CE6F00694F0E /* Localizable.stringsdict */,
 				7C537F5C2A77FBD0009196C9 /* Main.xcdatamodeld */,
 				7C537F512A77F46E009196C9 /* Assets.xcassets */,
 				7C537F532A77F46E009196C9 /* SkillMapper.entitlements */,
-				7CA06AAF2AA0B1B500810B05 /* Awards.json */,
+				7C669BEC2AA5D28500694F0E /* Awards.json */,
 				7CA06AAE2AA0B1B500810B05 /* Colors.xcassets */,
 				7C537F542A77F46E009196C9 /* Preview Content */,
 			);
@@ -158,6 +167,7 @@
 			knownRegions = (
 				en,
 				Base,
+				vi,
 			);
 			mainGroup = 7C537F412A77F46D009196C9;
 			productRefGroup = 7C537F4B2A77F46D009196C9 /* Products */;
@@ -174,10 +184,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C669BE22AA5CDE800694F0E /* Localizable.strings in Resources */,
 				7CA06AB02AA0B1B500810B05 /* Colors.xcassets in Resources */,
-				7CA06AB12AA0B1B500810B05 /* Awards.json in Resources */,
+				7C669BEA2AA5D28500694F0E /* Awards.json in Resources */,
 				7C537F562A77F46E009196C9 /* Preview Assets.xcassets in Resources */,
 				7C537F522A77F46E009196C9 /* Assets.xcassets in Resources */,
+				7C669BE62AA5CE6F00694F0E /* Localizable.stringsdict in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,6 +219,36 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7C669BE42AA5CDE800694F0E /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7C669BE32AA5CDE800694F0E /* en */,
+				7C669BE52AA5CDFA00694F0E /* vi */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		7C669BE82AA5CE6F00694F0E /* Localizable.stringsdict */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7C669BE72AA5CE6F00694F0E /* en */,
+				7C669BE92AA5CE7400694F0E /* vi */,
+			);
+			name = Localizable.stringsdict;
+			sourceTree = "<group>";
+		};
+		7C669BEC2AA5D28500694F0E /* Awards.json */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7C669BEB2AA5D28500694F0E /* en */,
+				7C669BED2AA5D28900694F0E /* vi */,
+			);
+			name = Awards.json;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		7C537F572A77F46E009196C9 /* Debug */ = {
@@ -324,11 +366,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = SkillMapper/SkillMapper.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SkillMapper/Preview Content\"";
 				DEVELOPMENT_TEAM = B534AW2NU4;
 				ENABLE_HARDENED_RUNTIME = YES;
+				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SkillMapper/Info.plist;
@@ -349,6 +393,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.tienbui1508.SkillMapper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -363,11 +408,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = SkillMapper/SkillMapper.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SkillMapper/Preview Content\"";
 				DEVELOPMENT_TEAM = B534AW2NU4;
 				ENABLE_HARDENED_RUNTIME = YES;
+				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SkillMapper/Info.plist;
@@ -388,6 +435,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.tienbui1508.SkillMapper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;

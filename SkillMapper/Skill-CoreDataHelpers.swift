@@ -39,6 +39,10 @@ extension Skill {
         }
     }
     
+    var skillFormattedCreateDate: String {
+        skillCreationDate.formatted(date: .numeric, time: .omitted)
+    }
+    
     var skillTagsList: String {
         guard let tags else { return "No tags" }
 
