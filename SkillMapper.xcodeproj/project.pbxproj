@@ -43,6 +43,7 @@
 		7C09AA742AA635B10019F312 /* TagsMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagsMenuView.swift; sourceTree = "<group>"; };
 		7C09AA762AA637600019F312 /* SmartFilterRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartFilterRow.swift; sourceTree = "<group>"; };
 		7C09AA782AA638030019F312 /* UserFilterRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFilterRow.swift; sourceTree = "<group>"; };
+		7C09AA7B2AA710380019F312 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		7C537F4A2A77F46D009196C9 /* SkillMapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkillMapper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C537F4D2A77F46D009196C9 /* SkillMapperApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillMapperApp.swift; sourceTree = "<group>"; };
 		7C537F4F2A77F46D009196C9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -106,6 +107,7 @@
 				7C537F4D2A77F46D009196C9 /* SkillMapperApp.swift */,
 				7C537F662A78F174009196C9 /* Filter.swift */,
 				7C537F5F2A77FFBC009196C9 /* DataController.swift */,
+				7C09AA7B2AA710380019F312 /* README.md */,
 				7C537F4F2A77F46D009196C9 /* ContentView.swift */,
 				7C09AA722AA6335C0019F312 /* ContentViewToolbar.swift */,
 				7C69C6EC2A7A02CD00ED148D /* SkillRow.swift */,

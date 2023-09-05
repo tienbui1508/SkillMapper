@@ -18,7 +18,11 @@ enum Status {
     case all, learning, learned
 }
 
+/// An environment singleton responsible for managing our Core Data stack, including handling saving,
+/// counting fetch requests, tracking awards, and dealing with sample data.
 class DataController: ObservableObject {
+
+    /// The lone CloudKit container used to store all our data.
     let container: NSPersistentCloudKitContainer
 
     @Published var selectedFilter: Filter? = Filter.all
@@ -56,9 +60,15 @@ class DataController: ObservableObject {
         return (try? container.viewContext.fetch(request).sorted()) ?? []
     }
 
+    /// Initializes a data controller, either in memory (for temporary use such as testing and previewing),
+    /// or on permanent storage (for use in regular app runs.)
+    ///
+    /// Defaults to permanent storage.
+    /// - Parameter inMemory: Whether to store this data in temporary memory or not.
     init(inMemory: Bool = false) {
         container = NSPersistentCloudKitContainer(name: "Main")
 
+        // For testing and previewing purposes, we create a temporary, in-memory database by writing to /dev/null so our data is destroyed after the app finishes running.
         if inMemory {
             container.persistentStoreDescriptions.first?.url = URL(filePath: "/dev/null")
         }
@@ -70,9 +80,10 @@ class DataController: ObservableObject {
         container.viewContext.mergePolicy = NSMergePolicy.mergeByPropertyObjectTrump
 
         // Watching for external changes
-        // tells Core Data we want to be notified when the store has changed
+        // Make sure that we watch iCloud for all changes to make absolutely sure we keep our local UI in sync when a remote change happens.
         container.persistentStoreDescriptions.first?.setOption(true as NSNumber, forKey: NSPersistentStoreRemoteChangeNotificationPostOptionKey)
-        // tells the system to call our new remoteStoreChanged() method whenever a change happens
+
+        // Tells the system to call our new remoteStoreChanged() method whenever a change happens
         NotificationCenter.default.addObserver(forName: .NSPersistentStoreRemoteChange, object: container.persistentStoreCoordinator, queue: .main, using: remoteStoreChanged)
 
         container.loadPersistentStores { _, error in
@@ -108,6 +119,8 @@ class DataController: ObservableObject {
         try? viewContext.save()
     }
 
+    /// Saves our Core Data context iff - if and only if - there are changes. This silently ignores
+    /// any errors caused by saving, but this should be fine because all our attributes are optional.
     func save() {
         saveTask?.cancel()
 
@@ -136,6 +149,9 @@ class DataController: ObservableObject {
         let batchDeleteRequest = NSBatchDeleteRequest(fetchRequest: fetchRequest)
         batchDeleteRequest.resultType = .resultTypeObjectIDs
 
+        // ⚠️ When performing a batch delete we need to make sure we read the result back
+        // then merge all the changes from that result back into our live view context
+        // so that the two stay in sync.
         if let delete = try? container.viewContext.execute(batchDeleteRequest) as? NSBatchDeleteResult {
             let changes = [NSDeletedObjectsKey: delete.result as? [NSManagedObjectID] ?? []]
             NSManagedObjectContext.mergeChanges(fromRemoteContextSave: changes, into: [container.viewContext])
@@ -162,6 +178,9 @@ class DataController: ObservableObject {
         return difference.sorted()
     }
 
+    /// Runs a fetch request with various predicates that filter the user's skills based
+    /// on tag, title and content text, search tokens, difficulty, and completion status.
+    /// - Returns: An array of all matching skills.
     func skillsForSelectedFilter() -> [Skill] {
         let filter = selectedFilter ?? .all
         var predicates = [NSPredicate]()
@@ -183,7 +202,7 @@ class DataController: ObservableObject {
             predicates.append(combinedPredicate)
         }
 
-        // TODO: fix details page when search for 2 tags
+        // TODO: fix details page when search for a tag then click for details
         if filterTokens.isEmpty == false {
             for filterToken in filterTokens {
                 let tokenPredicate = NSPredicate(format: "tags CONTAINS %@", filterToken)
@@ -221,6 +240,9 @@ class DataController: ObservableObject {
         save()
     }
 
+    // If we're currently browsing a user-created tag, immediately
+    // add this new skill to the tag otherwise it won't appear in
+    // the list of skills they see.
     func newSkill() {
         let skill = Skill(context: container.viewContext)
         skill.title = NSLocalizedString("New skill", comment: "Create a new skill")
