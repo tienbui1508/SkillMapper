@@ -87,6 +87,7 @@
 		7C537F412A77F46D009196C9 = {
 			isa = PBXGroup;
 			children = (
+				7C09AA7B2AA710380019F312 /* README.md */,
 				7C537F4C2A77F46D009196C9 /* SkillMapper */,
 				7C537F4B2A77F46D009196C9 /* Products */,
 			);
@@ -107,7 +108,6 @@
 				7C537F4D2A77F46D009196C9 /* SkillMapperApp.swift */,
 				7C537F662A78F174009196C9 /* Filter.swift */,
 				7C537F5F2A77FFBC009196C9 /* DataController.swift */,
-				7C09AA7B2AA710380019F312 /* README.md */,
 				7C537F4F2A77F46D009196C9 /* ContentView.swift */,
 				7C09AA722AA6335C0019F312 /* ContentViewToolbar.swift */,
 				7C69C6EC2A7A02CD00ED148D /* SkillRow.swift */,
