@@ -15,12 +15,12 @@ extension Tag {
     var tagName: String {
         name ?? ""
     }
-    
+
     var tagActiveSkills: [Skill] {
         let result = skills?.allObjects as? [Skill] ?? []
         return result.filter { $0.completed == false }
     }
-    
+
     static var example: Tag {
         let controller = DataController(inMemory: true)
         let viewContext = controller.container.viewContext

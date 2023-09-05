@@ -25,12 +25,12 @@ extension Skill {
     var skillModificationDate: Date {
         modificationDate ?? .now
     }
-    
+
     var skillTags: [Tag] {
         let result = tags?.allObjects as? [Tag] ?? []
         return result.sorted()
     }
-    
+
     var skillStatus: String {
         if completed {
             return "Learned"
@@ -38,11 +38,11 @@ extension Skill {
             return "Learning"
         }
     }
-    
+
     var skillFormattedCreateDate: String {
         skillCreationDate.formatted(date: .numeric, time: .omitted)
     }
-    
+
     var skillTagsList: String {
         guard let tags else { return "No tags" }
 
@@ -52,7 +52,7 @@ extension Skill {
             return skillTags.map(\.tagName).formatted()
         }
     }
-    
+
     static var example: Skill {
         let controller = DataController(inMemory: true)
         let viewContext = controller.container.viewContext

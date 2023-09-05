@@ -10,7 +10,7 @@ import SwiftUI
 struct SkillRow: View {
     @EnvironmentObject var dataController: DataController
     @ObservedObject var skill: Skill
-    
+
     var body: some View {
         NavigationLink(value: skill) {
             HStack {

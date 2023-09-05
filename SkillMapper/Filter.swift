@@ -13,14 +13,19 @@ struct Filter: Identifiable, Hashable {
     var icon: String
     var minModificationDate = Date.distantPast
     var tag: Tag?
-    
+
     var activeSkillCount: Int {
         tag?.tagActiveSkills.count ?? 0
     }
-    
+
     static var all = Filter(id: UUID(), name: "All Skills", icon: "tray.2")
-    static var recent = Filter(id: UUID(), name: "Recent Skills", icon: "clock", minModificationDate: .now.addingTimeInterval(86400 * -7))
-    
+    static var recent = Filter(
+        id: UUID(),
+        name: "Recent Skills",
+        icon: "clock",
+        minModificationDate: .now.addingTimeInterval(86400 * -7)
+    )
+
     // only hash id
     func hash(into hasher: inout Hasher) {
         hasher.combine(id)

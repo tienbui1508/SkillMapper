@@ -9,9 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @EnvironmentObject var dataController: DataController
-    
-    
-    
+
     var body: some View {
         List(selection: $dataController.selectedSkill) {
             ForEach(dataController.skillsForSelectedFilter()) { skill in
@@ -20,16 +18,19 @@ struct ContentView: View {
             .onDelete(perform: delete)
         }
         .navigationTitle("Skills")
-        .searchable(text: $dataController.filterText, tokens: $dataController.filterTokens, suggestedTokens: .constant(dataController.suggestedFilterTokens), prompt: "Filter skills, or type # to add tags") { tag in
-            Text(tag.tagName)
-        }
+        .searchable(
+            text: $dataController.filterText,
+            tokens: $dataController.filterTokens,
+            suggestedTokens: .constant(dataController.suggestedFilterTokens),
+            prompt: "Filter skills, or type # to add tags") { tag in
+                Text(tag.tagName)
+                }
         .toolbar(content: ContentViewToolbar.init)
-        
     }
-    
+
     func delete(_ offsets: IndexSet) {
         let skills = dataController.skillsForSelectedFilter()
-        
+
         for offset in offsets {
             let item = skills[offset]
             dataController.delete(item)

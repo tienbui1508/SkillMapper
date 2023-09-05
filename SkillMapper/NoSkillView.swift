@@ -9,12 +9,12 @@ import SwiftUI
 
 struct NoSkillView: View {
     @EnvironmentObject var dataController: DataController
-    
+
     var body: some View {
         Text("No Skill Selected")
             .font(.title)
             .foregroundStyle(.secondary)
-        
+
         Button("New Skill", action: dataController.newSkill)
     }
 }

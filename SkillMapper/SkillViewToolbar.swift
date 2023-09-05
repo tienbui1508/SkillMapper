@@ -10,7 +10,7 @@ import SwiftUI
 struct SkillViewToolbar: View {
     @EnvironmentObject var dataController: DataController
     @ObservedObject var skill: Skill
-    
+
     var body: some View {
         Menu {
             Button {
@@ -18,16 +18,16 @@ struct SkillViewToolbar: View {
             } label: {
                 Label("Copy Skill Title", systemImage: "doc.on.doc")
             }
-            
+
             Button {
                 skill.completed.toggle()
                 dataController.save()
             } label: {
                 Label(skill.completed ? "Re-learn Skill" : "Learned Skill", systemImage: "brain.head.profile")
             }
-            
+
             Divider()
-            
+
             Section("Tags") {
                 TagsMenuView(skill: skill)
             }
