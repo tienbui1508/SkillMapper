@@ -1,0 +1,25 @@
+{
+  "configurations" : [
+    {
+      "id" : "1907E20C-55F8-401B-8F1D-2F65D78307E0",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:SkillMapper.xcodeproj",
+        "identifier" : "7C5EAB292AAA410B00CBA25E",
+        "name" : "SkillMapperUITests"
+      }
+    }
+  ],
+  "version" : 1
+}

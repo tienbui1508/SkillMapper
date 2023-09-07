@@ -17,6 +17,7 @@ struct SkillRow: View {
                 Image(systemName: "exclamationmark.circle")
                     .imageScale(.large)
                     .opacity(skill.difficulty == 2 ? 1 : 0)
+                    .accessibilityIdentifier(skill.difficulty == 2 ? "\(skill.skillTitle) Hard Difficulty" : "")
 
                 VStack(alignment: .leading) {
                     Text(skill.skillTitle)
@@ -44,6 +45,7 @@ struct SkillRow: View {
             }
         }
         .accessibilityHint(skill.difficulty == 2 ? "Hard skill" : "")
+        .accessibilityIdentifier(skill.skillTitle)
     }
 }
 

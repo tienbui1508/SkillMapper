@@ -15,7 +15,7 @@ struct NoSkillView: View {
             .font(.title)
             .foregroundStyle(.secondary)
 
-        Button("New Skill", action: dataController.newSkill)
+        Button("New skill", action: dataController.newSkill)
     }
 }
 

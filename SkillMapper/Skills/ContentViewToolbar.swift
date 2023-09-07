@@ -54,7 +54,7 @@ struct ContentViewToolbar: View {
             }
 
             Button(action: dataController.newSkill) {
-                Label("New skill", systemImage: "square.and.pencil")
+                Label("New Skill", systemImage: "square.and.pencil")
             }
 
     }
