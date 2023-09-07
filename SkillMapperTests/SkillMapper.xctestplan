@@ -1,0 +1,29 @@
+{
+  "configurations" : [
+    {
+      "id" : "7ED7F9E5-6FCE-4C30-BBF6-3B08408BB80B",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:SkillMapper.xcodeproj",
+      "identifier" : "7C537F492A77F46D009196C9",
+      "name" : "SkillMapper"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:SkillMapper.xcodeproj",
+        "identifier" : "7C4F53702AA89C2700C7820F",
+        "name" : "SkillMapperTests"
+      }
+    }
+  ],
+  "version" : 1
+}

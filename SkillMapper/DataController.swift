@@ -60,13 +60,25 @@ class DataController: ObservableObject {
         return (try? container.viewContext.fetch(request).sorted()) ?? []
     }
 
+    static let model: NSManagedObjectModel = {
+        guard let url = Bundle.main.url(forResource: "Main", withExtension: "momd") else {
+            fatalError("Failed to locate model file.")
+        }
+
+        guard let managedObjectModel = NSManagedObjectModel(contentsOf: url) else {
+            fatalError("Failed to load model file.")
+        }
+
+        return managedObjectModel
+    }()
+
     /// Initializes a data controller, either in memory (for temporary use such as testing and previewing),
     /// or on permanent storage (for use in regular app runs.)
     ///
     /// Defaults to permanent storage.
     /// - Parameter inMemory: Whether to store this data in temporary memory or not.
     init(inMemory: Bool = false) {
-        container = NSPersistentCloudKitContainer(name: "Main")
+        container = NSPersistentCloudKitContainer(name: "Main", managedObjectModel: Self.model)
 
         // For testing and previewing purposes, we create a temporary, in-memory database by writing to /dev/null so our data is destroyed after the app finishes running.
         if inMemory {
@@ -202,7 +214,7 @@ class DataController: ObservableObject {
             predicates.append(combinedPredicate)
         }
 
-        // TODO: fix details page when search for a tag then click for details
+        // : fix details page when search for a tag then click for details
         if filterTokens.isEmpty == false {
             for filterToken in filterTokens {
                 let tokenPredicate = NSPredicate(format: "tags CONTAINS %@", filterToken)
