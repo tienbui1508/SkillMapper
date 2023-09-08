@@ -104,7 +104,7 @@ class DataController: ObservableObject {
                 fatalError("Fatal error loading store: \(error.localizedDescription)")
             }
 
-            #if DEBUG
+            #if DEBUG && os(iOS)
             if CommandLine.arguments.contains("enable-testing") {
                 self.deleteAll()
                 UIView.setAnimationsEnabled(false)
@@ -222,7 +222,6 @@ class DataController: ObservableObject {
             predicates.append(combinedPredicate)
         }
 
-        // : fix details page when search for a tag then click for details
         if filterTokens.isEmpty == false {
             for filterToken in filterTokens {
                 let tokenPredicate = NSPredicate(format: "tags CONTAINS %@", filterToken)

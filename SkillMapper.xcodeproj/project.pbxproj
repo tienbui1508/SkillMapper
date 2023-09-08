@@ -44,6 +44,7 @@
 		7CA06AB02AA0B1B500810B05 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CA06AAE2AA0B1B500810B05 /* Colors.xcassets */; };
 		7CA06AB32AA0B30400810B05 /* Award.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA06AB22AA0B30400810B05 /* Award.swift */; };
 		7CA06AB52AA0B3BE00810B05 /* AwardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA06AB42AA0B3BE00810B05 /* AwardsView.swift */; };
+		7CA3A5432AAAFF5300CCEB8F /* SidebarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA3A5422AAAFF5300CCEB8F /* SidebarViewModel.swift */; };
 		7CFEC3052AA9C67200ADD383 /* DevelopmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFEC3042AA9C67200ADD383 /* DevelopmentTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -113,6 +114,7 @@
 		7CA06AAE2AA0B1B500810B05 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		7CA06AB22AA0B30400810B05 /* Award.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Award.swift; sourceTree = "<group>"; };
 		7CA06AB42AA0B3BE00810B05 /* AwardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardsView.swift; sourceTree = "<group>"; };
+		7CA3A5422AAAFF5300CCEB8F /* SidebarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarViewModel.swift; sourceTree = "<group>"; };
 		7CFEC3042AA9C67200ADD383 /* DevelopmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevelopmentTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -175,6 +177,7 @@
 			children = (
 				7C537F662A78F174009196C9 /* Filter.swift */,
 				7C537F622A78EEBF009196C9 /* SidebarView.swift */,
+				7CA3A5422AAAFF5300CCEB8F /* SidebarViewModel.swift */,
 				7C09AA782AA638030019F312 /* UserFilterRow.swift */,
 				7C09AA762AA637600019F312 /* SmartFilterRow.swift */,
 				7C09AA6E2AA62F620019F312 /* SidebarViewToolbar.swift */,
@@ -482,6 +485,7 @@
 				7C09AA772AA637600019F312 /* SmartFilterRow.swift in Sources */,
 				7C537F5E2A77FBD0009196C9 /* Main.xcdatamodeld in Sources */,
 				7C69C6ED2A7A02CD00ED148D /* SkillRow.swift in Sources */,
+				7CA3A5432AAAFF5300CCEB8F /* SidebarViewModel.swift in Sources */,
 				7C537F652A78EEC8009196C9 /* DetailView.swift in Sources */,
 				7C09AA732AA6335C0019F312 /* ContentViewToolbar.swift in Sources */,
 				7C69C6F12A7A329300ED148D /* NoSkillView.swift in Sources */,

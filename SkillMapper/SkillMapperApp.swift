@@ -16,7 +16,7 @@ struct SkillMapperApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationSplitView {
-                SidebarView()
+                SidebarView(dataController: dataController)
             } content: {
                 ContentView()
             } detail: {

@@ -14,7 +14,10 @@ struct SkillViewToolbar: View {
     var body: some View {
         Menu {
             Button {
+                // ⚠️ this button won't work on macOS at the moment and would be updated later
+                #if os(iOS)
                 UIPasteboard.general.string = skill.title
+                #endif
             } label: {
                 Label("Copy Skill Title", systemImage: "doc.on.doc")
             }
